@@ -208,3 +208,7 @@ async def verify_video_file(
         "recomputed_stream_hash": recomputed,
         "sanity_mismatch": sanity_mismatch
     }
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the Video Signing API with Extra Metadata!"}
